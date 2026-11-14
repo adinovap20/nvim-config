@@ -1,7 +1,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-local opt = vim.opt
+local opt = vim.o
 
 -- Line numbers & UI
 opt.number = true
