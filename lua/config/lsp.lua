@@ -1,6 +1,9 @@
 -- Enable configured language servers
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('zig_ls')
+vim.lsp.enable('html_ls')
+vim.lsp.enable('css_ls')
+vim.lsp.enable('ts_ls')
 
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
