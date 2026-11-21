@@ -1,0 +1,6 @@
+return {
+    cmd = {'clangd'},
+    filetypes = {'c', 'cpp', '.h', '.hpp'},
+    root_markers = {'.clang.format', '.git'},
+    settings = {},
+}

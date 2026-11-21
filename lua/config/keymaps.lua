@@ -33,3 +33,5 @@ map('n', '<leader>x', '<cmd>bdelete<CR>', {desc='Close current buffer'})
 -- Explorer
 map('n', '<leader>e', '<cmd>e .<CR>', {desc='Open File Explorer'})
 
+map('i', '<C-Space>', '<C-x><C-o>', { desc = 'Trigger LSP/Omni completion' })
+

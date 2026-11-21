@@ -4,6 +4,7 @@ vim.lsp.enable('zig_ls')
 vim.lsp.enable('html_ls')
 vim.lsp.enable('css_ls')
 vim.lsp.enable('ts_ls')
+vim.lsp.enable('c_ls')
 
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
@@ -37,7 +38,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 vim.api.nvim_create_autocmd('BufWritePre', {
-  pattern = { "*.zig", "*.zon" },
+  pattern = { "*.zig", "*.zon", "*.cpp", "*.c", "*.h", "*.hpp" },
   callback = function(_)
     vim.lsp.buf.format()
   end
